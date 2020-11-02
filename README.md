@@ -32,6 +32,8 @@ Write several tests using GTest for your function in tests/q1_student_test.cc, a
 bazel test tests:q1_student_test
 ```
 
+Hint: You already wrote very similar test cases in HW4Q2. You can just copy and use them to do testing here quickly.
+
 ## Question 2 (20 points. Easy)
 Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
 
@@ -51,3 +53,15 @@ Write several tests using GTest for your function in tests/q2_student_test.cc, a
 ```
 bazel test tests:q2_student_test
 ```
+
+## Question 3 (30 points. Hard)
+Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Each node in the graph contains a val (int) and a list (List[Node]) of its neighbors.
+  ```
+  class Node {
+      public int val;
+      public List<Node> neighbors;
+  }
+  ```
+The definition of ```Node``` could be found in ```cpplib.h```.
+
+Tests of this question are not required, but you are still welcome to try. 
