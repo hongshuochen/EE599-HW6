@@ -70,10 +70,10 @@ class​ ​Graph​ {
     Graph ​g​(vertices); 
   }
 ```
-- Add a new method to this class to implement the ​non-recursive version​ of D​FS algorithm.
+- Add a new method to this class to implement the **​non-recursive version​ of D​FS algorithm**.
 - Your function should take a vertex called root as the starting point, and should output a vector containing the nodes that it visits in DFS order.
 
-Write several tests using GTest for your function in tests/q2_student_test.cc, and run the following command to verify the functionality of your program.
+Write several tests using GTest for your function in tests/q3_student_test.cc, and run the following command to verify the functionality of your program.
 ```
-bazel test tests:q2_student_test
+bazel test tests:q3_student_test
 ```
