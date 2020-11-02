@@ -20,6 +20,9 @@ class CPPLib {
   //q2
   vector<int> rightSideView(TreeNode* root);
 
+  //q4
+  ListNode* sortList(ListNode* head);
+
   private : 
 };
 

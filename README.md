@@ -78,3 +78,15 @@ Write several tests using GTest for your function in tests/q3_student_test.cc, a
 ```
 bazel test tests:q3_student_test
 ```
+
+## Question 4 (20 points. Medium)
+Given the head of a linked list, write a function ```ListNode* sortList(ListNode* head)``` that returns the head of list after sorting it in ascending order.
+
+Example:
+input: 2->1->0->5
+After sorting: 0->1->2->5
+
+Write several tests using GTest for your function in tests/q3_student_test.cc, and run the following command to verify the functionality of your program.
+```
+bazel test tests:q4_student_test
+```
