@@ -32,4 +32,12 @@ struct TreeNode {
       TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
 };
 
+//q3
+class​ ​Graph​ { 
+ public:
+  Graph​(std::​map​<​int​, std::s​ et​<​int​>> ​&​vertices​) : v_(vertices) {}
+  std::map<​int​, std::set<​int​>> v_; 
+  vector<int> DFS(int root);
+};
+
 #endif

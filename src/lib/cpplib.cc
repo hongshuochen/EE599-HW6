@@ -11,10 +11,15 @@ int CPPLib::SumOfNodes(TreeNode* root) {
 }
 
 int CPPLib::minDepth(TreeNode* root) {
-    
+
 }
 
 // Question 2
-vector<int> rightSideView(TreeNode* root) {
+vector<int> CPPLib::rightSideView(TreeNode* root) {
+    
+}
+
+// Question 3
+vector<int> Graph::DFS(int root) {
     
 }

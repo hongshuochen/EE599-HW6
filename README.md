@@ -54,14 +54,26 @@ Write several tests using GTest for your function in tests/q2_student_test.cc, a
 bazel test tests:q2_student_test
 ```
 
-## Question 3 (30 points. Hard)
-Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Each node in the graph contains a val (int) and a list (List[Node]) of its neighbors.
-  ```
-  class Node {
-      public int val;
-      public List<Node> neighbors;
-  }
-  ```
-The definition of ```Node``` could be found in ```cpplib.h```.
+## Question 3 (30 points. Medium)
+Consider the following representation of a graph using an std::map that maps each vertex to its neighbors, and the sample usage of it:
+```
+class​ ​Graph​ { 
+  public:
+​  Graph​(std::​map​<​int​, std::s​ et​<​int​>> ​&​vertices​) : v_(vertices) {}
+  std::map<​int​, std::set<​int​>> v_; };
 
-Tests of this question are not required, but you are still welcome to try. 
+  int​ ​main​() {
+    std::map<​int​, std::set<​int​>> vertices{
+      {​1​, {​2​, ​3​}},
+      {​2​, {​1​, ​3​, ​4​, ​5​}}, {​3​, {​1​, ​2​, ​4​}}, {​4​, {​2​, 3, ​4​}}
+      };
+    Graph ​g​(vertices); 
+  }
+```
+- Add a new method to this class to implement the ​non-recursive version​ of D​FS algorithm.
+- Your function should take a vertex called root as the starting point, and should output a vector containing the nodes that it visits in DFS order.
+
+Write several tests using GTest for your function in tests/q2_student_test.cc, and run the following command to verify the functionality of your program.
+```
+bazel test tests:q2_student_test
+```
