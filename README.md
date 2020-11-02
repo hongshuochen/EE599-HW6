@@ -60,15 +60,16 @@ Consider the following representation of a graph using an std::map that maps eac
 class​ ​Graph​ { 
   public:
 ​  Graph​(std::​map​<​int​, std::s​ et​<​int​>> ​&​vertices​) : v_(vertices) {}
-  std::map<​int​, std::set<​int​>> v_; };
+  std::map<​int​, std::set<​int​>> v_; 
+};
 
-  int​ ​main​() {
-    std::map<​int​, std::set<​int​>> vertices{
-      {​1​, {​2​, ​3​}},
-      {​2​, {​1​, ​3​, ​4​, ​5​}}, {​3​, {​1​, ​2​, ​4​}}, {​4​, {​2​, 3, ​4​}}
-      };
-    Graph ​g​(vertices); 
-  }
+int​ ​main​() {
+  std::map<​int​, std::set<​int​>> vertices{
+    {​1​, {​2​, ​3​}},
+    {​2​, {​1​, ​3​, ​4​, ​5​}}, {​3​, {​1​, ​2​, ​4​}}, {​4​, {​2​, 3, ​4​}}
+    };
+  Graph ​g​(vertices); 
+}
 ```
 - Add a new method to this class to implement the **​non-recursive version​ of D​FS algorithm**.
 - Your function should take a vertex called root as the starting point, and should output a vector containing the nodes that it visits in DFS order.
