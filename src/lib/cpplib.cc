@@ -25,6 +25,6 @@ vector<int> Graph::DFS(int root) {
 }
 
 //Question 4
-ListNode* sortList(ListNode* head) {
+ListNode* CPPLib::sortList(ListNode* head) {
     
 }

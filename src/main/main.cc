@@ -7,7 +7,7 @@ int main() {
   // Print Hello world!
   CPPLib s;
 
-  cout << s.PrintHelloWorld() << endl;
+  
   
   return 0;
 }
