@@ -5,6 +5,8 @@
 #include <string>
 #include <vector>
 
+using namespace std;
+
 /**
  *  Example class used for GTest demo
  */
@@ -13,6 +15,10 @@ class CPPLib {
   //q1
   int NumberOfNodes(TreeNode* root);
   int SumOfNodes(TreeNode* root);
+  
+  //q2
+  vector<int> rightSideView(TreeNode* root);
+  vector<int> keepOdd(const vector<int>& input, int i);
 
   private : 
 };

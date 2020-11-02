@@ -26,6 +26,26 @@ In this question, we will write a few functions using BFS to *measure* a given b
   ```
   Expected output: total number of nodes is 6, and the sum of nodes is 21.
 
+Write several tests using GTest for your function in tests/q1_student_test.cc, and run the following command to verify the functionality of your program.
+```
+bazel test tests:q1_student_test
+```
+
+## Question 2 (20 points. Easy)
+Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom.
+
+  Example:
+  Input:
+  ```
+
+    1            <---
+   /  \
+  2     3         <---
+   \     \
+    5     4       <---
+  ```
+  Expected output: [1, 3, 4]
+
 Write several tests using GTest for your function in tests/q2_student_test.cc, and run the following command to verify the functionality of your program.
 ```
 bazel test tests:q2_student_test
