@@ -9,7 +9,7 @@
 - Total: TBD. 100 points is considered full credit.
 
 ## Question 1 (20 Points. Easy)
-In this question, we will write a few functions using BFS to *measure* a given binary tree. The definition of ```TreeNode``` could be found in ```cpplib.h```. Note that this problem is partially same with HW4Q2, but you are supposed to use BFS to sovle it. Recursive-based solution will lead to zero credit.
+In this question, we will write two functions using BFS to *measure* a given binary tree. The definition of ```TreeNode``` could be found in ```cpplib.h```. Note that this problem is partially same with HW4Q2, but you are supposed to use BFS to sovle it. Recursive-based solution will lead to zero credit.
 - Given a binary tree, find its total number of nodes.
 - Given a binary tree, find the sum of numbers from all its nodes.
 
