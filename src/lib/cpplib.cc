@@ -10,6 +10,10 @@ int CPPLib::SumOfNodes(TreeNode* root) {
     
 }
 
+int CPPLib::minDepth(TreeNode* root) {
+    
+}
+
 // Question 2
 vector<int> rightSideView(TreeNode* root) {
     

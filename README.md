@@ -8,10 +8,11 @@
 - Deadline: TBD by 23:59 pm
 - Total: TBD. 100 points is considered full credit.
 
-## Question 1 (20 Points. Easy)
-In this question, we will write two functions using BFS to *measure* a given binary tree. The definition of ```TreeNode``` could be found in ```cpplib.h```. Note that this problem is partially same with HW4Q2, but you are supposed to use BFS to sovle it. Recursive-based solution will lead to zero credit.
+## Question 1 (30 Points. Easy)
+In this question, we will write three functions using BFS to *measure* a given binary tree. The definition of ```TreeNode``` could be found in ```cpplib.h```. Note that this problem is partially same with HW4Q2, but you are supposed to use BFS to sovle it. Recursive-based solution will lead to zero credit.
 - Given a binary tree, find its total number of nodes.
 - Given a binary tree, find the sum of numbers from all its nodes.
+- Given a binary tree, find its minimum depth. The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node. A leaf is a node with no children.
 
   Example: 
   Input: 
@@ -24,7 +25,7 @@ In this question, we will write two functions using BFS to *measure* a given bin
              \ 
               6
   ```
-  Expected output: total number of nodes is 6, and the sum of nodes is 21.
+  Expected output: total number of nodes is 6, the sum of nodes is 21, and the minimum depth is 2.
 
 Write several tests using GTest for your function in tests/q1_student_test.cc, and run the following command to verify the functionality of your program.
 ```
