@@ -56,7 +56,7 @@ bazel test tests:q2_student_test
 
 ## Question 3 (30 points. Medium)
 Consider the following representation of a graph using an std::map that maps each vertex to its neighbors, and the sample usage of it:
-```
+```cpp
 class​ ​Graph​ { 
   public:
 ​  Graph​(std::​map​<​int​, std::s​ et​<​int​>> ​&​vertices​) : v_(vertices) {}
@@ -89,4 +89,29 @@ After sorting: 0->1->2->5
 Write several tests using GTest for your function in tests/q4_student_test.cc, and run the following command to verify the functionality of your program.
 ```
 bazel test tests:q4_student_test
+```
+
+## Question 5 (20 points. Medium)
+Given a graph with known node name and their pair connectivity, write a function ```int ShortestDistance(std::vector<char> &node, std::vector<std::pair<char, char>> &vertices, char node_1, char node_2)```that returns the shortest distance between two nodes `node_1` and `node_2`. If two nodes are not connected, return -1.
+
+```
+Example:
+node = {'A','B','C','D','E','F','G'};
+vertices = { {'A','B'},
+             {'A','C'},
+             {'B','C'},
+             {'C','E'},
+             {'E','F'},
+             {'D','F'} 
+            };
+    
+Expected result: 
+shortest distance of 'A' and 'B' is 1, 
+shortest distance of 'A' and 'E' is 2.
+shortest distance of 'A' and 'G' is -1.
+```
+
+Write several tests using GTest for your function in tests/q5_student_test.cc, and run the following command to verify the functionality of your program.
+```
+bazel test tests:q5_student_test
 ```

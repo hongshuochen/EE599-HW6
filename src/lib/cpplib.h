@@ -21,31 +21,38 @@ struct TreeNode {
   TreeNode *right;
   TreeNode() : val(0), left(nullptr), right(nullptr) {}
   TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+  TreeNode(int x, TreeNode *left, TreeNode *right)
+      : val(x), left(left), right(right) {}
 };
 
 class CPPLib {
  public:
-  //q1
-  int NumberOfNodes(TreeNode* root);
-  int SumOfNodes(TreeNode* root);
-  int minDepth(TreeNode* root);
-  
-  //q2
-  vector<int> rightSideView(TreeNode* root);
+  // q1
+  int NumberOfNodes(TreeNode *root);
+  int SumOfNodes(TreeNode *root);
+  int minDepth(TreeNode *root);
 
-  //q4
-  ListNode* sortList(ListNode* head);
+  // q2
+  vector<int> rightSideView(TreeNode *root);
 
-  private : 
+  // q4
+  ListNode *sortList(ListNode *head);
+
+  // q5
+  int ShortestDistance(std::vector<char> &node,
+                       std::vector<std::pair<char, char>> &vertices,
+                       char node_1, char node_2);
+
+  private:
 };
 
-
-//q3
-class​ ​Graph​ { 
+// q3
+class​ ​Graph​ {
  public:
-  Graph​(std::​map​<​int​, std::s​ et​<​int​>> ​&​vertices​) : v_(vertices) {}
-  std::map<​int​, std::set<​int​>> v_; 
+  Graph​(std::​map​<​int​, std::s​ et​<​int​>> ​ &
+           ​vertices​)
+      : v_(vertices) {}
+  std::map<​int​, std::set<​int​>> v_;
   vector<int> DFS(int root);
 };
 
