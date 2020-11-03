@@ -15,12 +15,12 @@ int CPPLib::minDepth(TreeNode* root) {
 }
 
 // Question 2
-vector<int> CPPLib::rightSideView(TreeNode* root) {
+std::vector<int> CPPLib::rightSideView(TreeNode* root) {
     
 }
 
 // Question 3
-vector<int> Graph::DFS(int root) {
+std::vector<int> Graph::DFS(int root) {
     
 }
 
@@ -30,7 +30,7 @@ ListNode* CPPLib::sortList(ListNode* head) {
 }
 
 //Question 5
-int CPPLib::ShortestDistance(std::vector<char> &node,
+int ShortestDistance(std::vector<char> &node,
                        std::vector<std::pair<char, char>> &vertices,
                        char node_1, char node_2) {
                         
