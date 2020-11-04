@@ -13,16 +13,6 @@ struct ListNode
   ListNode(int x) : val(x), next(nullptr) {}
 };
 
-struct TreeNode
-{
-  int val;
-  TreeNode *left;
-  TreeNode *right;
-  TreeNode() : val(0), left(nullptr), right(nullptr) {}
-  TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
-  TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
-};
-
 class SinglyLinkedList {
 public:
   // default constructor
@@ -65,13 +55,6 @@ public:
 class CPPLib
 {
 public:
-  // q1
-  int NumberOfNodes(TreeNode *root);
-  int SumOfNodes(TreeNode *root);
-  int minDepth(TreeNode *root);
-
-  // q2
-  std::vector<int> rightSideView(TreeNode *root);
 
   // q4
   ListNode *sortList(ListNode *head);
@@ -83,6 +66,39 @@ public:
 
 private:
 };
+
+// q2
+enum class NodeStatus { 
+  NotVisited, 
+  Visiting, 
+  Visited 
+};
+ 
+struct GraphNode {
+  int node_number;
+  NodeStatus status;
+  std::vector<GraphNode *> children;
+  GraphNode(int n) : node_number(n) { 
+    status = NodeStatus::NotVisited; 
+  }
+};
+
+class PointerGraph {
+public:
+  PointerGraph() {}
+ 
+  // Returns true if a cycle is reachable from start_node
+  bool ReachesACycle(GraphNode *start_node);
+ 
+  // Returns true if the graph has a cycle
+  bool HasCycle();
+ 
+  // Resets the status of all nodes to 
+  NodeStatus::NotVisited
+  void ResetStatus();
+  std::vector<GraphNode *> _nodes;
+};
+
 
 // q3
 class​ ​Graph​
