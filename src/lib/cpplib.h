@@ -39,9 +39,9 @@ class CPPLib {
   ListNode *sortList(ListNode *head);
 
   // q5
-  int ShortestDistance(std::vector<char> &node,
-                       std::vector<std::pair<char, char>> &vertices,
-                       char node_1, char node_2);
+  std::vector<char> ShortestPath(std::vector<char> &vertices,
+                                 std::vector<std::pair<char, char>> &edges,
+                                 char node_1, char node_2);
 
   private:
 };

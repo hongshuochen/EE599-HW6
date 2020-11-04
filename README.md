@@ -46,26 +46,28 @@ Write several tests using GTest for your function in tests/q4_student_test.cc, a
 bazel test tests:q4_student_test
 ```
 
-## Question 5 (20 points. Medium)
-Given a graph with known node name and their pair connectivity, write a function ```int ShortestDistance(std::vector<char> &node, std::vector<std::pair<char, char>> &vertices, char node_1, char node_2)```that returns the shortest distance between two nodes `node_1` and `node_2`. If two nodes are not connected, return -1.
+## Question 5 (20 points. Medium - Hard)
+Given a graph with known node name and their pair connectivity, write a function ```std::vector<char> ShortestPath(std::vector<char> &vertices, std::vector<std::pair<char, char>> &edges, char node_1, char node_2)```that returns the path with shortest distance between two nodes `node_1` and `node_2`. If two nodes are not connected, return an empty vector. If two nodes have multiple shortest shortest paths, return one of the paths would be OK.
 
 ```
 Example:
-node = {'A','B','C','D','E','F','G'};
-vertices = { {'A','B'},
-             {'A','C'},
-             {'B','C'},
-             {'C','E'},
-             {'E','F'},
-             {'D','F'} 
-            };
+vertices = {'A','B','C','D','E','F','G'};
+edges = { {'A','B'},
+          {'A','C'},
+          {'B','C'},
+          {'B','E'},
+          {'C','E'},
+          {'E','F'},
+          {'D','F'} 
+        };
     
 Expected result: 
-shortest distance of 'A' and 'B' is 1, 
-shortest distance of 'A' and 'E' is 2.
-shortest distance of 'A' and 'G' is -1.
+shortest path of 'A' and 'B' is {'A', 'B'}, 
+shortest path of 'A' and 'E' is either {'A','C',E'} or {'A','B','E'},
+shortest path of 'A' and 'G' is {}.
 ```
-
+* Hint: Can you implement your algorithm with time complexity O(V+E)?
+  
 Write several tests using GTest for your function in tests/q5_student_test.cc, and run the following command to verify the functionality of your program.
 ```
 bazel test tests:q5_student_test
