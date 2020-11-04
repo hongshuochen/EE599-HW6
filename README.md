@@ -78,10 +78,14 @@ bazel test tests:q3_student_test
 ```
 
 ## Question 4 (20 points. Medium)
-Given the head of a linked list, write a function ```ListNode* sortList(ListNode* head)``` that returns the head of list after sorting it in ascending order.
+Given the head of a linked list, write a function ```ListNode* sortList(ListNode* head)``` that sorts the linked list using selection sort.
 
-Example:
-input: 2->1->0->5
+Note:\
+- You must use selection sort rather than other sorting algorithm
+- Please use the linked list you created in hw3 rather than bulit-in list
+
+Example:\
+input: 2->1->0->5\
 After sorting: 0->1->2->5
 
 Write several tests using GTest for your function in tests/q4_student_test.cc, and run the following command to verify the functionality of your program.
