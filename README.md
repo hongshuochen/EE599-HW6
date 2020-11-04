@@ -53,7 +53,7 @@ public:
 Here are few examples:
 Example 1
 - Input:
-<p align="center"><img width="80%" src="Picture2-1.png" /></p>
+<p align="center"><img width="40%" src="Picture2-1.png" /></p>
 - Output: 
 ReachesACycle for node 1 returns true.
 ReachesACycle for node 5 returns false.
