@@ -38,14 +38,13 @@ class PointerGraph {
 public:
  PointerGraph() {}
  
-// Returns true if a cycle is reachable from start_node
+ // Returns true if a cycle is reachable from start_node
  bool ReachesACycle(GraphNode *start_node);
  
  // Returns true if the graph has a cycle
  bool HasCycle();
  
- // Resets the status of all nodes to 
-    NodeStatus::NotVisited
+ // Resets the status of all nodes to NodeStatus::NotVisited
  void ResetStatus();
  std::vector<GraphNode *> _nodes;
 };
