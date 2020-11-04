@@ -25,7 +25,7 @@ std::vector<int> Graph::DFS(int root) {
 }
 
 //Question 4
-ListNode* CPPLib::sortList(ListNode* head) {
+void SinglyLinkedList::sortList() {
     
 }
 

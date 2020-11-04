@@ -59,6 +59,9 @@ public:
 
   void print(); //prints the list: ex. Empty list: { }. List with Items: {1, 2, 3}
 
+  // q4
+  void sortList();
+
   ListNode *head_; //Pointer to the first element
 };
 
@@ -73,8 +76,6 @@ public:
   // q2
   std::vector<int> rightSideView(TreeNode *root);
 
-  // q4
-  ListNode *sortList(ListNode *head);
 
   // q5
   std::vector<char> ShortestPath(std::vector<char> &vertices,
