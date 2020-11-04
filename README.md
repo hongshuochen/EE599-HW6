@@ -9,7 +9,50 @@
 - Deadline: TBD by 23:59 pm
 - Total: 120. 100 points is considered full credit.
 
-## Question 3 (30 points. Medium)
+## Question 2 (30 points. Medium - Hard)
+Given a directed graph, find out if it contains a cycle.
+Your task is to write the following three functions:
+- ReachesACycle
+- HasCycle
+- ResetStatus
+We use following code to represent graph node.
+```c++
+enum class NodeStatus { 
+  NotVisited, 
+  Visiting, 
+  Visited 
+};
+
+struct GraphNode {
+ int node_number;
+ NodeStatus status;
+ std::vector<GraphNode *> children;
+ GraphNode(int n) : node_number(n) { 
+   status = NodeStatus::NotVisited; 
+  }
+};
+```
+The graph is implemented using the following code:
+```c++
+class PointerGraph {
+public:
+ PointerGraph() {}
+ 
+// Returns true if a cycle is reachable from start_node
+ bool ReachesACycle(GraphNode *start_node);
+ 
+ // Returns true if the graph has a cycle
+ bool HasCycle();
+ 
+ // Resets the status of all nodes to 
+    NodeStatus::NotVisited
+ void ResetStatus();
+ std::vector<GraphNode *> _nodes;
+};
+```
+
+
+## Question 3 (20 points. Medium)
 Consider the following representation of a graph using an std::map that maps each vertex to its neighbors, and the sample usage of it:
 ```cpp
 class​ ​Graph​ { 
