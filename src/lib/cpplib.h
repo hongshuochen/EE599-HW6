@@ -47,7 +47,7 @@ public:
   // Returns true if the graph has a cycle
   bool HasCycle();
  
-  // Resets the status of all nodes to NodeStatus NotVisited
+  // Resets the status of all nodes to NodeStatus::NotVisited
   void ResetStatus();
   std::vector<GraphNode *> _nodes;
 };
