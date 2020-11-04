@@ -65,9 +65,9 @@ Example 2
 
 - Output: ```ReachesACycle``` for node 0 returns true. ```ReachesACycle``` for node 4 returns false. ```HasCycle``` returns true.
 
-Write several tests using GTest for your function in tests/q4_student_test.cc, and run the following command to verify the functionality of your program.
+Write several tests using GTest for your function in tests/q2_student_test.cc, and run the following command to verify the functionality of your program.
 ```
-bazel test tests:q4_student_test
+bazel test tests:q2_student_test
 ```
 
 ## Question 3 (20 points. Medium)
