@@ -101,8 +101,7 @@ public:
 
 
 // q3
-class​ ​Graph​
-{
+class​ ​Graph​ {
 public:
   Graph​(std::​map​<​int​, std::s​et​<​int​>> ​ & ​vertices​) : v_(vertices) {}
   std::map<​int​, std::set<​int​>> v_;
