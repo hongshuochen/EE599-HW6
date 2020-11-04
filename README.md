@@ -54,10 +54,12 @@ Here are few examples:
 Example 1
 - Input:
 <p align="center"><img width="40%" src="Picture2-1.png" /></p>
-- Output: 
-ReachesACycle for node 1 returns true.
-ReachesACycle for node 5 returns false.
-HasCycle returns true.
+- Output: ReachesACycle for node 1 returns true. ReachesACycle for node 5 returns false. HasCycle returns true.
+
+Example 2
+- Input:
+<p align="center"><img width="40%" src="Picture2-2.png" /></p>
+- Output: ReachesACycle for node 0 returns true. ReachesACycle for node 4 returns false. HasCycle returns true.
 
 ## Question 3 (20 points. Medium)
 Consider the following representation of a graph using an std::map that maps each vertex to its neighbors, and the sample usage of it:
