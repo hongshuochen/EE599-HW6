@@ -96,9 +96,9 @@ bazel test tests:q3_student_test
 ```
 
 ## Question 4 (20 points. Medium)
-Given the head of a linked list, write a function ```ListNode* sortList(ListNode* head)``` that sorts the linked list using selection sort.
+Given a linked list, write a function ```void sortList()``` that sorts the linked list using selection sort.
 
-Note:\
+Note:
 - You must use selection sort rather than other sorting algorithm
 - Please use the linked list you created in hw3 rather than bulit-in list
 

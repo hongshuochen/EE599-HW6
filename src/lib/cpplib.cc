@@ -8,7 +8,7 @@
 // Question 3
 
 //Question 4
-ListNode* CPPLib::sortList(ListNode* head) {
+void SinglyLinkedList::sortList() {
     
 }
 
