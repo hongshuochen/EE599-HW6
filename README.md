@@ -164,7 +164,7 @@ shortest path of 'A' and 'E' is either {'A','C',E'} or {'A','B','E'},
 shortest path of 'A' and 'G' is {}.
 ```
 
-- Hint: Can you implement your algorithm with time complexity O(V+E)?
+- Hint: Can you implement your algorithm with time complexity O(|V|+|E|)?
 
 Write several tests using GTest for your function in tests/q5_student_test.cc, and run the following command to verify the functionality of your program.
 
