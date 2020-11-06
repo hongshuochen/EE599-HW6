@@ -21,11 +21,12 @@ Hint: This question could be solved by topological sort or checking whether ther
 ```c++
 bool canFinish(int numCourses, std::vector<std::pair<int, int>> &prerequisites)
 ```
-
-Input: 2, [[1,0]] //2 courses, take course 1 you have to first take course 0 \
+2 courses, take course 1 you have to first take course 0 \
+Input: 2, [[1,0]] \
 Output: true
 
-Input: 2, [[1,0], [0,1]] //2 courses, take course 1 you have to first take course 0 and take course 0 you have to first take course 1 \
+2 courses, take course 1 you have to first take course 0 and take course 0 you have to first take course 1 \
+Input: 2, [[1,0], [0,1]] \
 Output: false
 
 ## Question 2 (30 points. Medium - Hard)
