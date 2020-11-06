@@ -5,8 +5,10 @@
 - For non-coding questions, you will find **Answer** below each question. Please write your answer there.
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests).
 - For coding questions, there is a **black box** testing for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
+
+
 - For submission, please push your answers to Github before the deadline.
-- Deadline: Nov 11th 2020 by 23:59 pm
+- Deadline: Fri, Nov 13th 2020 by 06:30 pm
 - Total: 120 points. 100 points is considered full credit.
 
 ## Question 1 (30 pints, Medium)
