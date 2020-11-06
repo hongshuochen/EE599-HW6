@@ -6,7 +6,6 @@
 - For coding questions, please make sure that your code can run ```bazel run/test```. In this homework, you will need to fill up [cpplib.cc](src/lib/cpplib.cc) and tests in [tests](tests).
 - For coding questions, there is a **black box** testing for each question. All points are only based on passing the test cases or not (i.e. we don't grade your work by your source code). So, try to do comprehensive testing before your final submission.
 
-
 - For submission, please push your answers to Github before the deadline.
 - Deadline: Fri, Nov 13th 2020 by 06:30 pm
 - Total: 120 points. 100 points is considered full credit.
@@ -23,10 +22,10 @@ Hint: This question could be solved by topological sort or checking whether ther
 bool canFinish(int numCourses, std::vector<std::pair<int, int>> &prerequisites)
 ```
 
-Input: 2, [[1,0]]
+Input: 2, [[1,0]] //2 courses, take course 1 you have to first take course 0 \
 Output: true
 
-Input: 2, [[1,0], [0,1]]
+Input: 2, [[1,0], [0,1]] //2 courses, take course 1 you have to first take course 0 and take course 0 you have to first take course 1 \
 Output: false
 
 ## Question 2 (30 points. Medium - Hard)
